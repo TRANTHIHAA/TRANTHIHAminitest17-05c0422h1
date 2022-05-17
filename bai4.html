@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sum=0;
+    let count = 0;
+    let countSNT =0;
+    for (let i=2; i<500;i++){
+        if (countSNT < 500) {
+            for (let j=1; j<=i; j++) {
+                if(i%j == 0) {
+                    count+=1;
+                }
+            }
+            if(count==2) {
+              sum+=i
+                countSNT +=1;
+
+            }
+            count=0;
+        } else {
+            break;
+        }
+    }
+    document.write("Tổng các số nt nhỏ hơn 500 là: "+sum)
+</script>
+</body>
+</html>

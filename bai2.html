@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[1,2,3,4,5,'a','b','c','a'];
+    dem =0;
+    a= prompt("nhap phan tu a");
+    for(let i=0;i<array.length;i++) {
+        if(array[i]==a) {
+            dem+=1;
+        }
+    }
+    if(dem){
+    document.write("Có "+dem+" phần tử "+a+" trong mảng")}
+     else {
+         document.write("Không có phần tử "+a+" trong mảng")
+     }
+</script>
+</body>
+</html>
